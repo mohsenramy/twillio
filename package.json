@@ -1,0 +1,50 @@
+{
+  "name": "heckyeah",
+  "version": "0.1.0",
+  "private": true,
+  "repository": "https://doo-Heckyeah@dev.azure.com/doo-Heckyeah/Heckyeah/_git/heckyeah-webpay",
+  "dependencies": {
+    "@material-ui/core": "^4.9.14",
+    "@material-ui/icons": "^4.9.1",
+    "@stripe/react-stripe-js": "^1.1.2",
+    "@stripe/stripe-js": "^1.5.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.19.2",
+    "qs": "^6.9.6",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "react-stripe-elements": "^6.1.2",
+    "twilio-sync": "^2.0.1",
+    "twilio-video": "^2.13.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build:dev": "REACT_APP_STAGE=development react-scripts build",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "sv:next-ver": "standard-version -a --dry-run",
+    "sv:rel-next": "standard-version -a",
+    "postbump": "echo no.postbump "
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "https://azapp-hyapi-edev.azurewebsites.net/graphql"
+}
